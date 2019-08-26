@@ -10,6 +10,17 @@ For some reason using MacOS Finder to this failed for me, but cmd line unzip wor
 Files
 -----
 
+VERSION 2
+
+See below, but beam is now 30 arcmin and only a single iteration is done so far.
+
+
+VERSION 1
+
+
+
+Everything is smoothed with a sigma = 15 arcmin beam.
+
 Simulations:
     Points:
         {i}-full-noisy.fits
