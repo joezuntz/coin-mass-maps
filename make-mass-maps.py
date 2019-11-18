@@ -18,7 +18,7 @@ RNG_BASE=400
 SMOOTHING = 30.0  # arcmin
 
 # Number of sims you want
-N = 1
+N = 50
 
 # Arbitrary - adjust as desired
 TOTAL_POINTS_FULL_SKY = 1_000_000
@@ -293,7 +293,7 @@ def main():
 
     print(f"N for full sky: {nfull}, for masked sky: {nmasked}")
 
-    for i in range(N):
+    for i in range(1, N):
         print(f"Running iteration {i}")
         run_flask(i, nside)
         T.mark("run_flask")
@@ -356,5 +356,5 @@ def des_main():
 
 
 if __name__ == '__main__':
-    des_main()
+    # des_main()
     main()
